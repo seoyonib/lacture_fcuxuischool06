@@ -1,0 +1,22 @@
+@charset "utf=8";
+section{
+  background-color: teal;
+  color: #fff;
+  margin: 2em;
+  padding: 1em;
+  overflow: hidden;
+}
+.f-left{
+  float: left;
+  margin-right: 50px;
+}
+
+.f-right{
+  float: right;
+  margin-left: 50px;
+}
+
+img{
+  width:275px;
+  height: auto;
+}
