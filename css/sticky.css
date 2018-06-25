@@ -1,0 +1,16 @@
+@charset "utf=8";
+.content{
+  background-color: teal;
+  margin: 2em 4em;
+  padding: 1em;
+  color: #ffffff;
+}
+.title{
+  background-color: yellowgreen;
+  padding: 1em;
+  border-radius: 50px 0 50px 0;
+  color: #181818;
+  position: sticky;
+  top: 20px;
+  
+}
