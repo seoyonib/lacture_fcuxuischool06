@@ -1,0 +1,54 @@
+@charset "utf=8";
+/* 모든 디바이스 */
+body{
+  background-color: yellow;
+margin: 0px;
+}
+figure{
+  margin:0;
+  padding:0;
+}
+/* .img-wrap{width:100%;} */
+.img-wrap img{
+  width:100%;
+height:auto;
+}
+/* 모바일 디바이스 1~599px */
+@media screen and (min-width:1px) and (max-width:599px)
+{
+  body{background-color: pink;
+
+  }
+  .img-wrap{
+    margin:1em;
+
+  }
+}
+/* 태블릿 디바이스 600~1024px */
+@media screen and (min-width: 600px) and (max-width:1024px)
+{body{background-color: greenyellow;}
+.wrap-container{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-wrap{
+  width: 50%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+}
+
+/* 데스크탑 디바이스 1025px이상 */
+@media screen and (min-width: 1025px)
+{body{background-color:orange;}
+.wrap-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-wrap{
+  width:25%;
+  padding:1em;
+  box-sizing: border-box;
+}
+}
