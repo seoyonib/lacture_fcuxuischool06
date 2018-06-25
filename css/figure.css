@@ -1,0 +1,20 @@
+@charset "utf=8";
+div{
+  background-color: #ffff00;
+  width: 1000px;
+  height: 1000px;
+  /* border: 10px dashed red;
+  padding: 50px; */
+  margin:0 auto;
+  display: flex;
+  /* flex를 주는 순간 x축으로 나열해주는 속성이 있음. */
+flex-direction: row-reverse;
+/* 디폴트값. 가로로 한다. */
+flex-wrap: wrap;
+/* 줄바꿈 허용 */
+/* 반드시 부모속성에 써야 함. flex */
+/* direction,wrap 같은 속성에 들어가야 함. */
+}
+div figure{
+  margin:0;
+}
