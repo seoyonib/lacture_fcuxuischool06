@@ -1,0 +1,21 @@
+@charset "utf=8";
+.box1{
+  width:200px;
+  height:200px;
+border: 10px solid black;
+background-color: yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+  transition-property: transform, border-radius, background;
+  transition-duration: 2s,2s,2s;
+  transition-delay: 0s,2s,4s;
+  transition-timing-function: ease-in-out;
+}
+
+.box1:hover{
+  transform: rotate(360deg);
+ background-color: pink;
+  border-radius: 50%;
+
+}
