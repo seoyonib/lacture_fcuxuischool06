@@ -1,0 +1,64 @@
+@charset "utf=8";
+@keyframes text-ani{
+  0%{
+    font-size: 16px;
+    color:rgba(255,0,0,0);
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+  }
+  100%{
+    font-size: 48px;
+    color: rgba(0,0,255,1);
+    top: 150px;
+    left: 450px;
+    opacity: 1;
+  }
+
+}
+
+@keyframes img-ani{
+  0%{
+transform: translateX(0);
+  }
+  100%{
+transform: translateX(700px);
+  }
+
+}
+
+.text-wrap{
+  background-color: yellow;
+  width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+.text{
+  background-color: pink;
+  /* animation-name: text-ani;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 5s; */
+  /* animation-play-state: paused; */
+  animation: text-ani 5s forwards ease-in-out infinite alternate 5s;
+
+}
+
+.img-wrap{
+  background-color: pink;
+  padding: 50px;
+
+}
+
+.apeach{
+animation: img-ani 3000ms forwards infinite ease-in-out alternate;
+
+}
