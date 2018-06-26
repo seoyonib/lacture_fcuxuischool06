@@ -1,0 +1,62 @@
+@charset "utf=8";
+@keyframes steps{
+  0%{
+background-position: 0 0;
+  }
+  100%{
+    background-position: 100% 0;
+  }
+
+}
+
+.box{
+  
+  width: 50px;
+  height: 72px;
+margin: 50px;
+border: 1px solid black;
+background: url("../images/steps.png") 0 0 no-repeat;
+animation: steps 1s  infinite steps(10) ;
+}
+
+
+.intro-wrap{
+  box-sizing: border-box;
+  width: 585px;
+  height: 366px;
+  margin: 50px;
+  background: url("../images/terminal.png") 0 0 no-repeat;
+  border: 1px solid grey;
+  padding: 30px;
+  
+}
+
+.intro1, .intro2{
+  /* background-color: yellow; */
+  animation: intro-text 2s forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+}
+.intro1{
+  animation-delay: 1s;
+
+}
+.intro2{
+  animation-delay: 3s;
+
+}
+
+@keyframes intro-text{
+  0%{
+    width: 0;
+    opacity: 1;
+
+
+  }
+100%{
+  width: 165px;
+  opacity: 1;
+}
+}
+
